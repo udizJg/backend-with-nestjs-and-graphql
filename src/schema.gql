@@ -1,0 +1,74 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mutation {
+  createProduct(createProductInput: ProductInput!): Product!
+  removeProduct(id: Int!): [Product!]!
+  updateProduct(id: Int!, updateProductInput: UpdateProductInput!): Product!
+}
+
+type Product {
+  """Example field (placeholder)"""
+  category: String!
+
+  """Example field (placeholder)"""
+  description: String!
+
+  """Example field (placeholder)"""
+  id: Int!
+
+  """Example field (placeholder)"""
+  image: String!
+
+  """Example field (placeholder)"""
+  price: String!
+
+  """Example field (placeholder)"""
+  title: String!
+}
+
+input ProductInput {
+  """Example field (placeholder)"""
+  category: Int!
+
+  """Example field (placeholder)"""
+  description: Int!
+
+  """Example field (placeholder)"""
+  id: Int!
+
+  """Example field (placeholder)"""
+  image: Int!
+
+  """Example field (placeholder)"""
+  price: Int!
+
+  """Example field (placeholder)"""
+  title: Int!
+}
+
+type Query {
+  product(id: Int!): Product!
+  products: [Product!]!
+}
+
+input UpdateProductInput {
+  """Example field (placeholder)"""
+  category: String!
+
+  """Example field (placeholder)"""
+  description: String!
+
+  """Example field (placeholder)"""
+  id: Int!
+
+  """Example field (placeholder)"""
+  image: String!
+
+  """Example field (placeholder)"""
+  price: String!
+
+  """Example field (placeholder)"""
+  title: String!
+}
